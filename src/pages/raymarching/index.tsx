@@ -3,7 +3,6 @@ import { Suspense, useRef } from 'react'
 import * as THREE from 'three'
 import { v4 as uuidv4 } from 'uuid'
 
-import styles from './index.module.scss'
 import fragmentShader from './shader/fragmentShader.glsl'
 import vertexShader from './shader/vertexShader.glsl'
 
