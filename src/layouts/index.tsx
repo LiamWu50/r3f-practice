@@ -1,6 +1,7 @@
 import { Layout } from 'antd'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
+import Cloudscapes from '../pages/cloudscapes'
 import Geospatial from '../pages/geospatial'
 import Raymarching from '../pages/raymarching'
 import styles from './index.module.scss'
@@ -19,6 +20,7 @@ const Layouts = () => {
             <Routes>
               <Route path='/' element={<Geospatial />} />
               <Route path='/raymarching' element={<Raymarching />} />
+              <Route path='/cloudscapes' element={<Cloudscapes />} />
             </Routes>
           </Router>
         </Content>
