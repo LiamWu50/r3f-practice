@@ -1,6 +1,5 @@
 import { Canvas } from '@react-three/fiber'
 import { Leva } from 'leva'
-import { ACESFilmicToneMapping, SRGBColorSpace } from 'three'
 
 import { Stats } from '../../helpers/Stats'
 import styles from './index.module.scss'
@@ -23,19 +22,11 @@ const Geospatial = () => {
         }}
       />
       <Canvas
-        dpr={[1, 2]}
         gl={{
-          antialias: true,
-          toneMapping: ACESFilmicToneMapping,
-          outputColorSpace: SRGBColorSpace
+          antialias: false,
+          depth: false,
+          stencil: false
         }}
-        camera={{
-          fov: 55,
-          near: 0.1,
-          far: 200,
-          position: [3, 2, 9]
-        }}
-        shadows
       >
         <Stats />
         <Scene />
